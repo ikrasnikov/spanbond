@@ -1,0 +1,28 @@
+.layout-split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.layout-split__item {
+  flex-shrink: 0;
+}
+
+.layout-split__item--expand {
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: hidden;
+}
+
+.layout-split--stretch {
+  height: 100%;
+ }
+
+.layout-split--bottom {
+  align-items: flex-end;
+ }
+
+.layout-split--start {
+  justify-content: flex-start;
+}

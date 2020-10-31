@@ -1,0 +1,65 @@
+.slogan {
+  position: relative;
+  width: 100%;
+}
+
+.slogan__image-container {
+  background-color: black;
+}
+
+.slogan__image {
+  width: 100%;
+  max-height: 900px;
+  opacity: 0.6;
+}
+
+.slogan__container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+  text-transform: uppercase;
+  color: #F4F6F6;
+  text-align: center;
+}
+
+.article__image {
+  height: 150px;
+}
+
+.article__image--large {
+  height: 200px;
+}
+
+.article__heading {
+  font-size: 48px;
+  text-align: center;
+}
+
+.article__text {
+  font-size: 20px;
+}
+
+.article__text--light {
+  color: #0F7BBC;
+}
+
+.article__image--left {
+  float: left;
+  margin: 0 0 8px 8px;
+}
+
+.article__image--right {
+  float: right;
+  margin: 8px 8px 0 0;
+}
+
+.use-list {
+  font-size: 20px;
+  padding-left: 24px;
+}
+
+.use-list li {
+  list-style-type: circle;
+}

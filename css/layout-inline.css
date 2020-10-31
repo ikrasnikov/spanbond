@@ -1,0 +1,120 @@
+.layout-inline {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.layout-inline__item {
+  flex-shrink: 0;
+}
+
+.layout-inline__item:not(:first-child) {
+   padding-left: 16px;
+}
+
+.layout-inline__item--expand {
+   flex-grow: 1;
+   flex-shrink: 1;
+   overflow: hidden; // ensure that it does not expand over 100%
+}
+
+.layout-inline__item--collapse {
+   flex-grow: 0;
+   flex-shrink: 1;
+   overflow: hidden;
+}
+
+.layout-inline__item--flexible {
+   flex-grow: 1;
+   flex-shrink: 1;
+   flex-basis: 0;  //fix for IE
+}
+
+.layout-inline__item--valign-center {
+   align-self: center;
+}
+
+.layout-inline__item--valign-top {
+   align-self: flex-start;
+}
+
+.layout-inline__item--valign-bottom {
+   align-self: flex-end;
+}
+
+.layout-inline__item--25per {
+  width: 25%;
+}
+
+.layout-inline__item--30per {
+  width: 30%;
+}
+
+.layout-inline__item--33per {
+  width: calc(100%/3);
+}
+
+.layout-inline__item--40per {
+  width: 40%;
+}
+
+.layout-inline__item--50per {
+  width: 50%;
+}
+
+.layout-inline__item--66per {
+  width: calc(100%/3*2);
+}
+
+.layout-inline__item--75per {
+  width: 75%;
+}
+
+.layout-inline--align-right {
+   justify-content: flex-end !important;
+ }
+
+.layout-inline--align-center {
+   justify-content: center !important;
+ }
+
+.layout-inline--valign-baseline {
+   align-items: baseline !important;
+ }
+
+.layout-inline--valign-stretch {
+   align-items: stretch !important;
+ }
+
+.layout-inline--valign-top {
+   align-items: flex-start !important;
+ }
+
+.layout-inline--wrap {
+  flex-wrap: wrap;
+  margin-bottom: -8px;
+}
+
+.layout-inline--wrap.layout-inline__item {
+  margin-bottom: 8px;
+}
+
+.layout-inline--stretch {
+  height: 100%;
+}
+
+.layout-inline--0px > .layout-inline__item:not(:first-child) {
+  padding-left: 0;
+}
+
+.layout-inline--6px > .layout-inline__item:not(:first-child) {
+  padding-left: 6px;
+}
+
+.layout-inline--12px > .layout-inline__item:not(:first-child) {
+  padding-left: 12px;
+}
+
+.layout-inline--24px > .layout-inline__item:not(:first-child) {
+  padding-left: 24px;
+}

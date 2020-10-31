@@ -1,0 +1,40 @@
+.mdc-tab {
+  height: 64px !important;
+  font-weight: 500;
+  display: block;
+  line-height: 64px;
+  letter-spacing: 0.5px;
+}
+
+.mdc-tab-indicator .mdc-tab-indicator__content--underline {
+  border-top-width: 3px;
+}
+
+.mdc-tab-indicator .mdc-tab-indicator__content--underline {
+   border-color: #0F7BBC;
+}
+
+.mdc-tab--active .mdc-tab__text-label {
+  color: #0F7BBC;
+  font-size: 18px;
+}
+
+.mdc-tab__ripple::before, .mdc-tab__ripple::after {
+  background-color: #0F7BBC;
+}
+
+.mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: #b8c9d9;
+}
+
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+  border-color: #b8c9d9;
+}
+
+.mdc-text-field--outlined:not(.mdc-text-field--disabled):hover .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled):hover .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled):hover .mdc-notched-outline__trailing {
+  border-color: #0F7BBC !important;
+}

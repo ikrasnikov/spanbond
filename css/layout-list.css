@@ -1,0 +1,60 @@
+.layout-list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.layout-list__item {
+  flex-shrink: 0;
+}
+
+.layout-list__item:not(:last-child) {
+   padding-bottom: 24px;
+}
+
+.layout-list__item--expand {
+   flex-shrink: 0;
+   flex-grow: 1;
+}
+
+.layout-list--compressed {
+  width: auto;
+}
+
+.layout-list--align-center {
+   align-items: center;
+}
+
+.layout-list--align-right {
+   align-items: flex-end;
+}
+
+.layout-list--valign-center {
+   justify-content: center;
+}
+
+.layout-list--0px > .layout-list__item:not(:last-child) {
+  padding-bottom: 0;
+}
+
+.layout-list--6px > .layout-list__item:not(:last-child) {
+  padding-bottom: 6px;
+}
+
+.layout-list--12px > .layout-list__item:not(:last-child) {
+  padding-bottom: 12px;
+}
+
+.layout-list--16px > .layout-list__item:not(:last-child) {
+  padding-bottom: 16px;
+}
+
+.layout-list--44px > .layout-list__item:not(:last-child) {
+  padding-bottom: 44px;
+}
+
+.layout-list--88px > .layout-list__item:not(:last-child) {
+  padding-bottom: 88px;
+}
