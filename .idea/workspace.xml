@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45ae96aa-5f35-4617-8e27-cd527ac774bc" name="Default Changelist" comment="" />
+    <list default="true" id="45ae96aa-5f35-4617-8e27-cd527ac774bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/goods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/goods.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/goods.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/mat-library.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mat-library.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods.html" beforeDir="false" afterPath="$PROJECT_DIR$/goods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +30,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1j0AqUJmfF1zkAYf3Kux54g4WAM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,7 +42,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../studytube/e2e-tests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
@@ -42,6 +59,7 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets" />
     </key>
   </component>
@@ -64,6 +82,10 @@
       <workItem from="1603953555987" duration="704000" />
       <workItem from="1603956655973" duration="1565000" />
       <workItem from="1604043672792" duration="15920000" />
+      <workItem from="1604156304008" duration="3141000" />
+      <workItem from="1604298350839" duration="18507000" />
+      <workItem from="1604387423353" duration="13366000" />
+      <workItem from="1604422008676" duration="1363000" />
     </task>
     <servers />
   </component>
@@ -71,17 +93,17 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1604085289845">
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1604391020101">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1604085289845" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1604391020101" />
     <state x="482" y="187" key="SettingsEditor" timestamp="1603188135658">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1603188135658" />
-    <state x="684" y="262" width="618" height="580" key="find.popup" timestamp="1603188302494">
+    <state x="684" y="262" width="618" height="580" key="find.popup" timestamp="1604423420324">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="684" y="262" width="618" height="580" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1603188302494" />
+    <state x="684" y="262" width="618" height="580" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1604423420324" />
   </component>
 </project>

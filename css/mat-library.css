@@ -38,3 +38,36 @@
 .mdc-text-field--outlined:not(.mdc-text-field--disabled):hover .mdc-notched-outline__trailing {
   border-color: #0F7BBC !important;
 }
+
+.mdc-dialog {
+  display: block;
+  z-index: -1;
+}
+
+.mdc-dialog .mdc-button__label {
+  font-size: 18px;
+}
+
+.dialog--first-layer {
+  z-index: 30;
+}
+
+.dialog--visible .mdc-dialog__scrim {
+  opacity: 1;
+}
+
+.mdc-dialog__scrim {
+  transition: opacity 400ms cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.mdc-dialog__container {
+  transition: opacity 400ms cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dialog--visible .mdc-dialog__container {
+  opacity: 1;
+}
+
+.mdc-dialog__content {
+  font-size: 20px;
+}

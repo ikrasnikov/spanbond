@@ -351,14 +351,6 @@
                     <label class="mdc-text-field mdc-text-field--outlined">
                       <span class="mdc-notched-outline">
                         <span class="mdc-notched-outline__leading"></span>
-                        <span class="mdc-notched-outline__notch">
-                          <span
-                                class="mdc-floating-label"
-                                id="phoneLabel"
-                          >
-                            (___) ___-__-__
-                          </span>
-                        </span>
                         <span class="mdc-notched-outline__trailing"></span>
                       </span>
 
@@ -374,11 +366,11 @@
                   </div>
 
                   <div class="layout-inline__item">
-                    <button class="mdc-button mdc-button--outlined">
+                    <button class="mdc-button mdc-button--outlined"  onclick="openOrderDialog()">
                       <div class="mdc-button__ripple"></div>
                       <span class="mdc-button__label">
-                    Заказать звонок
-                  </span>
+                        Заказать звонок
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -428,9 +420,9 @@
                     </div>
                   </div>
 
-                  <div class="layout-list__item">
+                  <a href="our-email@gmail.com" target="_blank" class="layout-list__item link">
                     our-email@gmail.com
-                  </div>
+                  </a>
                 </div>
               </div>
 
@@ -459,8 +451,32 @@
         </div>
       </div>
     </footer>
+
+    <div class="mdc-dialog" id="dialog" onclick="closeOrderDialog(event)">
+      <div class="mdc-dialog__container">
+        <div class="mdc-dialog__surface"
+             role="alertdialog"
+             aria-modal="true"
+             aria-labelledby="my-dialog-title"
+             aria-describedby="my-dialog-content">
+          <div class="mdc-dialog__content" id="my-dialog-content">
+            Спасибо! Менеджер свяжется с Вами в течении 15 минут для обсуждения деталей.
+          </div>
+          <div class="mdc-dialog__actions">
+            <button class="mdc-button mdc-button--raised">
+              <span class="mdc-button__label">
+                Закрыть
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mdc-dialog__scrim"></div>
+    </div>
   </body>
 
   <script src="./js/index.js"></script>
+  <script src="./js/order.js"></script>
   <script src="./js/mask.js"></script>
 </html>

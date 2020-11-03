@@ -45,13 +45,12 @@ article h2 {
   padding-bottom: 36px;
 }
 
-.card {
-  display: block;
-  width: 100%;
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .12),
-   0 2px 2px 0 rgba(0, 0, 0, .24);
-  border-radius: 3px;
-  background: white;
+.footer a{
+  color: #b8c9d9;
+}
+
+.content-wrapper {
+  padding-top: 88px;
 }
 
 .delimiter {
@@ -65,16 +64,13 @@ article h2 {
   color: #b8c9d9;
 }
 
-.footer .mdc-button__label {
-  color: #b8c9d9;
+.footer .mdc-button:not(:disabled) {
+  color: #0F7BBC;
 }
 
-.footer .mdc-button--outlined:not(:disabled) {
-  border-color: #b8c9d9;
-}
-
-.footer .mdc-button .mdc-button__ripple::before {
-  background-color: #b8c9d9;
+.card .mdc-button--raised:not(:disabled),
+.mdc-dialog .mdc-button--raised:not(:disabled) {
+  background-color: #0F7BBC;
 }
 
 .contact-title {
@@ -88,4 +84,20 @@ article h2 {
 .recall-text {
   font-size: 20px;
   text-transform: uppercase;
+}
+
+.link {
+  display: inline;
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.link--hidden {
+  opacity: 0;
 }

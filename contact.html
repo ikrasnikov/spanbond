@@ -24,6 +24,10 @@
           href="css/contact.css">
 
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_ndnngQrnQfuZxw5YeVu5n3xOx-eS4es&callback=initMap&libraries=&v=weekly"
+          defer
+    ></script>
   </head>
 
   <body>
@@ -97,96 +101,22 @@
       </div>
     </header>
 
-    <main class="main">
-    </main>
+    <main class="main layout-content">
+      <article class="content-wrapper layout-list">
+        <h1 class="layout-list__item">
+          Нас можно найти:
+        </h1>
 
-    <footer class="footer">
-    <div  class="layout-content layout-content--wide">
-      <div class="layout-inline">
-        <div class="layout-inline__item layout-inline__item--25per">
-          <div class="layout-list">
-            <div class="layout-list__item">
-              <a href="/" class="logo-container">
-                <img class="logo" src="./assets/image-1.jpg">
-              </a>
-            </div>
-
-            <div class="layout-list__item is--font-italic">
-              <div class="layout-list layout-list--6px">
+        <div class="layout-list__item">
+          <div class="layout-inline contact">
+            <div class="layout-inline__item layout-inline__item--50per">
+              <div class="layout-list">
                 <div class="layout-list__item">
-                  Надежный партнер
+                  Харьков
                 </div>
 
                 <div class="layout-list__item">
-                  для вашего бизнеса
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="layout-inline__item layout-inline__item--50per">
-          <div class="layout-list layout-list--12px">
-            <div class="layout-list__item recall-text">
-              Мы вам перезвоним
-            </div>
-
-            <div class="layout-list__item">
-              <div class="layout-inline">
-                <div class="layout-inline__item">
-                  <label class="mdc-text-field mdc-text-field--outlined">
-                      <span class="mdc-notched-outline">
-                        <span class="mdc-notched-outline__leading"></span>
-                        <span class="mdc-notched-outline__notch">
-                          <span
-                                class="mdc-floating-label"
-                                id="phoneLabel"
-                          >
-                            (___) ___-__-__
-                          </span>
-                        </span>
-                        <span class="mdc-notched-outline__trailing"></span>
-                      </span>
-
-                    <input
-                          type="text"
-                          class="mdc-text-field__input"
-                          aria-labelledby="my-label-id"
-                          id="phoneInput"
-                          value="(___) ___-__-__"
-                          data-mask="(___) ___-__-__"
-                    >
-                  </label>
-                </div>
-
-                <div class="layout-inline__item">
-                  <button class="mdc-button mdc-button--outlined">
-                    <div class="mdc-button__ripple"></div>
-                    <span class="mdc-button__label">
-                    Заказать звонок
-                  </span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="layout-inline__item layout-inline__item--25per">
-          <div class="layout-list">
-            <div class="layout-list__item">
-              <div class="layout-list layout-list--6px">
-                <div class="layout-list__item">
-                  <div class="layout-inline">
-                    <div class="layout-inline__item">
-                      <i class="material-icons mdc-button__icon" aria-hidden="true"
-                      >call</i>
-                    </div>
-
-                    <div class="layout-inline__item">
-                      Телефон
-                    </div>
-                  </div>
+                  Барабашово и т.д.
                 </div>
 
                 <div class="layout-list__item">
@@ -196,54 +126,191 @@
                 <div class="layout-list__item">
                   (050) 395-32-50 - Генадий
                 </div>
-              </div>
-            </div>
 
-            <div class="layout-list__item">
-              <div class="layout-list layout-list--6px">
-                <div class="layout-list__item">
-                  <div class="layout-inline">
-                    <div class="layout-inline__item">
-                      <i class="material-icons mdc-button__icon" aria-hidden="true"
-                      >email</i>
-                    </div>
-
-                    <div class="layout-inline__item">
-                      Почта
-                    </div>
-                  </div>
-                </div>
-
-                <div class="layout-list__item">
+                <a href="our-email@gmail.com" target="_blank" class="layout-list__item link">
                   our-email@gmail.com
-                </div>
+                </a>
               </div>
             </div>
 
-            <div class="layout-list__item">
-              <div class="layout-list layout-list--6px">
-                <div class="layout-list__item">
-                  <div class="layout-inline">
-                    <div class="layout-inline__item">
-                      <i class="material-icons mdc-button__icon" aria-hidden="true"
-                      >place</i>
-                    </div>
+            <div class="layout-inline__item layout-inline__item--50per">
+              <div class="map" id="map"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
 
-                    <div class="layout-inline__item contact-title">
-                      Адрес
-                    </div>
+    <footer class="footer">
+      <div  class="layout-content layout-content--wide">
+        <div class="layout-inline">
+          <div class="layout-inline__item layout-inline__item--25per">
+            <div class="layout-list">
+              <div class="layout-list__item">
+                <a href="/" class="logo-container">
+                  <img class="logo" src="./assets/image-1.jpg">
+                </a>
+              </div>
+
+              <div class="layout-list__item is--font-italic">
+                <div class="layout-list layout-list--6px">
+                  <div class="layout-list__item">
+                    Надежный партнер
+                  </div>
+
+                  <div class="layout-list__item">
+                    для вашего бизнеса
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <div class="layout-list__item">
-                  Барабашова и тут нужно дописать :)
+          <div class="layout-inline__item layout-inline__item--50per">
+            <div class="layout-list layout-list--12px">
+              <div class="layout-list__item recall-text">
+                Мы вам перезвоним
+              </div>
+
+              <div class="layout-list__item">
+                <div class="layout-inline">
+                  <div class="layout-inline__item">
+                    <label class="mdc-text-field mdc-text-field--outlined">
+                        <span class="mdc-notched-outline">
+                          <span class="mdc-notched-outline__leading"></span>
+                          <span class="mdc-notched-outline__notch">
+                            <span
+                                  class="mdc-floating-label"
+                                  id="phoneLabel"
+                            >
+                              (___) ___-__-__
+                            </span>
+                          </span>
+                          <span class="mdc-notched-outline__trailing"></span>
+                        </span>
+
+                      <input
+                            type="text"
+                            class="mdc-text-field__input"
+                            aria-labelledby="my-label-id"
+                            id="phoneInput"
+                            value="(___) ___-__-__"
+                            data-mask="(___) ___-__-__"
+                      >
+                    </label>
+                  </div>
+
+                  <div class="layout-inline__item">
+                    <button class="mdc-button mdc-button--outlined" onclick="openOrderDialog()">
+                      <div class="mdc-button__ripple"></div>
+                      <span class="mdc-button__label">
+                      Заказать звонок
+                    </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="layout-inline__item layout-inline__item--25per">
+            <div class="layout-list">
+              <div class="layout-list__item">
+                <div class="layout-list layout-list--6px">
+                  <div class="layout-list__item">
+                    <div class="layout-inline">
+                      <div class="layout-inline__item">
+                        <i class="material-icons mdc-button__icon" aria-hidden="true"
+                        >call</i>
+                      </div>
+
+                      <div class="layout-inline__item">
+                        Телефон
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="layout-list__item">
+                    (050) 395-38-42 - Александр
+                  </div>
+
+                  <div class="layout-list__item">
+                    (050) 395-32-50 - Генадий
+                  </div>
+                </div>
+              </div>
+
+              <div class="layout-list__item">
+                <div class="layout-list layout-list--6px">
+                  <div class="layout-list__item">
+                    <div class="layout-inline">
+                      <div class="layout-inline__item">
+                        <i class="material-icons mdc-button__icon" aria-hidden="true"
+                        >email</i>
+                      </div>
+
+                      <div class="layout-inline__item">
+                        Почта
+                      </div>
+                    </div>
+                  </div>
+
+                  <a href="our-email@gmail.com" target="_blank" class="layout-list__item link">
+                    our-email@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="layout-list__item">
+                <div class="layout-list layout-list--6px">
+                  <div class="layout-list__item">
+                    <div class="layout-inline">
+                      <div class="layout-inline__item">
+                        <i class="material-icons mdc-button__icon" aria-hidden="true"
+                        >place</i>
+                      </div>
+
+                      <div class="layout-inline__item contact-title">
+                        Адрес
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="layout-list__item">
+                    Барабашова и тут нужно дописать :)
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </footer>
+
+    <div class="mdc-dialog" id="dialog" onclick="closeOrderDialog(event)">
+      <div class="mdc-dialog__container">
+        <div class="mdc-dialog__surface"
+             role="alertdialog"
+             aria-modal="true"
+             aria-labelledby="my-dialog-title"
+             aria-describedby="my-dialog-content">
+          <div class="mdc-dialog__content" id="my-dialog-content">
+            Спасибо! Менеджер свяжется с Вами в течении 15 минут для обсуждения деталей.
+          </div>
+          <div class="mdc-dialog__actions">
+            <button class="mdc-button mdc-button--raised">
+              <span class="mdc-button__label">
+                Закрыть
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mdc-dialog__scrim"></div>
     </div>
-  </footer>
   </body>
+
+  <script src="./js/order.js"></script>
+  <script src="./js/contact.js"></script>
 </html>
